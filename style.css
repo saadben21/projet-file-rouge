@@ -115,6 +115,9 @@ nav{
     transform: translateY(-100%);
     text-align: center;
 }
+.active{
+    color:#009999;
+}
 
 nav a{
     color:rgb(255, 255, 255);
@@ -145,21 +148,37 @@ nav a:hover{
     position: sticky;
     top: 0;
     left: 0;
-    flex-wrap: wrap;
     justify-content:center;
+    align-items: center;
+    display:flex;
 }
 .navbar-nav{
     color: #808080;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     list-style-type: none;
     font-weight: bold;
-    width:85%;
+    width:70%;
     height:100px;
     margin:0 auto;
-    align-items: center;
-   
+    align-items: center;  
+    flex-wrap: wrap;
+}
+.user{
+    float:right;
+    display:flex;
+    position:relative;
+    justify-content: space-evenly;
+    flex-basis: 100px;
+    flex-wrap: wrap;
+    cursor: pointer;
+    transition: 0.5s;
+    color:#009999;
+    font-size: 25px;
+}
+.user:hover{
+    color: #808080;
+    transform: scale(1.1);
 }
 .navbar-nav a:hover{
     color: #009999;
@@ -167,7 +186,7 @@ nav a:hover{
 }
 .navbar-nav li{
     flex-basis: 20%;
-    flex-grow: 1;
+    flex-grow:1 ;
     flex-shrink: 1;
 }
 .nav-item{
@@ -176,6 +195,9 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.user{
+    font-size:25px;
 }
 /* end navbar desktop */
 @media screen and (max-width: 480px){
